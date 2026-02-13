@@ -15,13 +15,32 @@ print(np.linalg.norm(b))
 #example in terms of ML
 #linera regression model
 #sushant - subject1
-features1 = np.array([100,23,33])     # three features -attendance,assignments,assessments
-weights1 = np.array( [0.2,0.4,0.4])   # weights - weightage for attendance, assignment, assessment
-b = 0
-y = np.dot(features1,weights1) + b
-print("prediction score : {}".format(y))
+# features1 = np.array([100,23,33])     # three features -attendance,assignments,assessments
+# weights1 = np.array( [0.2,0.4,0.4])   # weights - weightage for attendance, assignment, assessment
+# b = 0
+# y = np.dot(features1,weights1) + b
+# print("prediction score : {}".format(y))
+#
+# #subject 2 - Pallavi
+# features2 = np.array([43,80,65])
+# y1 = np.dot(features2,weights1) + b
+# print("prediction score : {}".format(y1))
 
-#subject 2 - Pallavi
-features2 = np.array([43,80,65])
-y1 = np.dot(features2,weights1) + b
-print("prediction score : {}".format(y1))
+
+# Weights
+weights = np.array([0.2, 0.4, 0.4])
+b = 0
+
+# Subject data
+subjects = ["Sushant", "Pallavi"]
+
+features1 = np.array([100, 23, 33])   # Sushant
+features2 = np.array([43, 80, 65])    # Pallavi
+
+# Predictions
+y_sushant = np.dot(features1, weights) + b
+y_pallavi = np.dot(features2, weights) + b
+
+print(y_sushant, y_pallavi)
+predictions = [y_sushant, y_pallavi]
+
