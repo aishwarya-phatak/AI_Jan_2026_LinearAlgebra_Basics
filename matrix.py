@@ -42,3 +42,21 @@ print(prediction1)
 A = np.array([[1,1],[1,1]])
 result = 3 * A
 print(result)
+print("-------------------------")
+print("-------------------------")
+
+#matrix shape calculation and multiplication
+matrix_1 = np.array([[12,13,14],[15,18,10]])
+print(matrix_1)
+
+vec_weights = np.array([60,20,20])
+print(vec_weights)
+print("-------------------------")
+result_1 = np.dot(matrix_1, vec_weights)
+print("-------------------------")
+result_2 = matrix_1 @ vec_weights
+
+print(np.shape(matrix_1))
+print(np.shape(vec_weights))
+print(np.shape(result_1))
+print(np.shape(result_2))
