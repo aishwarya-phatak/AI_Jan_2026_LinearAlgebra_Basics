@@ -4,6 +4,8 @@ tensor_1 = np.array([[[1,1,1],[2,2,2]],[[1,1,1],[2,2,2]]])
 tensor_2 = np.array([[[1,1,1],[2,2,2]],[[1,1,1],[2,2,2]]])
 print(tensor_1 + tensor_2)
 print(np.shape(tensor_1))   #shape of tensor
+print("--------------------")
+print(np.linalg.matrix_rank(tensor_1))
 
 A = np.array([[1,2],[1,2]])
 B = np.array([[1,2],[1,2]])
